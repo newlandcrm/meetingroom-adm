@@ -2,6 +2,13 @@ import request from '@/utils/request'
 
 const api_name = 'roomReserve'
 export default {
+  examine(examinehMap) {
+    return request({
+      url: `/${api_name}/examine`,
+      method: 'post',
+      data: examinehMap
+    })
+  },
   getList() {
     return request({
       url: `/${api_name}`,

@@ -2,6 +2,13 @@ import request from '@/utils/request'
 
 const api_name = 'building'
 export default {
+  test(searchMap){
+    return request({
+      url: `/${api_name}/test`,
+      method: 'post',
+      data:searchMap
+    })
+  },
   getList() {
     return request({
       url: `/${api_name}`,

@@ -42,13 +42,11 @@ export const constantRouterMap = [
     name: 'Example',
     meta: { title: '基本信息管理', icon: 'example' },
     children: [
-      { path: 'building', name: 'building', component: () => import('@/views/table/building'), meta: { title: 'building', icon: 'table' }},
-      { path: 'department', name: 'department', component: () => import('@/views/table/department'), meta: { title: 'department', icon: 'table' }},
-      { path: 'floor', name: 'floor', component: () => import('@/views/table/floor'), meta: { title: 'floor', icon: 'table' }},
-      { path: 'room', name: 'room', component: () => import('@/views/table/room'), meta: { title: 'room', icon: 'table' }},
-      { path: 'user', name: 'user', component: () => import('@/views/table/user'), meta: { title: 'user', icon: 'table' }},
-      { path: 'roomReserve', name: 'roomReserve', component: () => import('@/views/table/roomReserve'), meta: { title: 'roomReserve', icon: 'table' }},
-
+      { path: 'roomReserve', name: 'roomReserve', component: () => import('@/views/table/roomReserve'), meta: { title: '会议室预定', icon: 'table' }},
+      { path: 'room', name: 'room', component: () => import('@/views/table/room'), meta: { title: '会议室', icon: 'table' }},
+      { path: 'floor', name: 'floor', component: () => import('@/views/table/floor'), meta: { title: '楼层', icon: 'table' }},
+      { path: 'building', name: 'building', component: () => import('@/views/table/building'), meta: { title: '楼', icon: 'table' }},
+      { path: 'department', name: 'department', component: () => import('@/views/table/department'), meta: { title: '部门', icon: 'table' }},
       { path: 'user', name: 'table', component: () => import('@/views/table/user'), meta: { title: '用户管理', icon: 'table' }}
     ]
   },

@@ -45,9 +45,13 @@ const user = {
       return new Promise((resolve, reject) => {
         getInfo(state.token).then(response => {
           const data = response.data
-          commit('SET_ROLES', data.roles)
-          commit('SET_NAME', data.name)
+          console.log("111")
+          commit('SET_ROLES', data.roleid)
+          console.log("222")
+          commit('SET_NAME', data.nickname)
+          console.log("333")
           commit('SET_AVATAR', data.avatar)
+          console.log("444")
           resolve(response)
         }).catch(error => {
           reject(error)
