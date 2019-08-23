@@ -4,17 +4,7 @@
   <el-form :inline="true">
           <el-form-item  label="楼名">
 <el-input v-model="searchMap.name" placeholder="楼名"></el-input></el-form-item>
-<div class="block">
-    <span class="demonstration">默认</span>
-    <el-date-picker
-      v-model="value1"
-      type="datetimerange"
-      range-separator="至"
-      start-placeholder="开始日期"
-      end-placeholder="结束日期">
-    </el-date-picker>
-    <el-button type="primary" @click="test()">test</el-button>
-  </div>
+
 
     <el-button type="primary" @click="fetchData()">查询</el-button>
     <el-button type="primary" @click="handleEdit('')">新增</el-button>
